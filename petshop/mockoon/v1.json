@@ -1,0 +1,228 @@
+{
+  "source": "mockoon:1.14.1",
+  "data": [
+    {
+      "type": "environment",
+      "item": {
+        "uuid": "",
+        "lastMigration": 15,
+        "name": "Api petshop",
+        "endpointPrefix": "",
+        "latency": 0,
+        "port": 5000,
+        "routes": [
+          {
+            "uuid": "",
+            "documentation": "",
+            "method": "get",
+            "endpoint": "posts",
+            "responses": [
+              {
+                "uuid": "",
+                "body": "[\n  {\n    \"id\": 1,\n    \"title\": \"Banho no cão\",\n    \"metadescription\": \"Use as utensilios certos para banhar seu cão\",\n    \"body\": \"A maioria dos cães prefere pular a hora do banho, mas o banho desempenha um papel importante na saúde do pelo e da pele do seu cão, ajudando a mantê-lo limpo e livre de sujeira e parasitas. Ter os produtos certos pode ajudá-lo a se sentir mais confortável.\",\n    \"categoria\": \"bem-estar\",\n    \"subcategoria\": \"higiene\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"Seu cachorro merece um tapete higiênico\",\n    \"metadescription\": \"O banheiro que seu cachorro merece\",\n    \"body\": \"Os tapetes higiênicos são uma inovação do mercado pet, perfeitos para que seu cão faça suas necessidades com conforto e sem sujar a casa. São produtos descartáveis ou laváveis que garantem conforto ao animal.\",\n    \"categoria\": \"bem-estar\",\n    \"subcategoria\": \"higiene\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"Época de pulgas?\",\n    \"metadescription\": \"É necessário evitar que seus animais sejam afetados por esses parasitas\",\n    \"body\": \"Não é a mordida, mas a reação alérgica a ela que faz seu cão coçar. Alguns animais de estimação são hipersensíveis a pulgas e podem sofrer uma reação severa com apenas uma única mordida. No entanto, todos os animais de estimação sentirão desconforto em caso de picadas de pulgas. Portanto, assim que você vir arranhões repetidos, suspeite de pulgas.\",\n    \"categoria\": \"bem-estar\",\n    \"subcategoria\": \"saude\"\n  },\n  {\n    \"id\": 4,\n    \"title\": \"Uma onda de pets estressados\",\n    \"metadescription\": \"A mudança de rotina pode ser o maior fator\",\n    \"body\": \"Eles começaram a contar com a atenção extra incluindo todos aqueles novos cachorrinhos que esperam que estejamos por perto, mas com mais pessoas voltando ao escritório ou saindo de férias, os cães vão sentir a ausência mais do que nunca, criando uma pandemia de ansiedade entre nossos cães, para a qual podemos não estar preparados.\",\n    \"categoria\": \"comportamento\",\n    \"subcategoria\": \"educacao\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"Como treinar seu cachorro para parar de ter medo\",\n    \"metadescription\": \"A socialização é um grande fator nesse aprendizado\",\n    \"body\": \"Ensinar um cachorro a parar de ter medo só pode ser feito aumentando sua autoconfiança. Isso significa mudar a forma como sua mente reage em certas situações e transformar associações negativas em positivas. Fazer isso requer muita paciência e uma série de exposições controladas ao evento ou objeto temido, mas a uma distância suficiente para que o cão não se sinta ansioso.\",\n    \"categoria\": \"comportamento\",\n    \"subcategoria\": \"educacao\"\n  },\n  {\n    \"id\": 6,\n    \"title\": \"Por que os gatos rosnam?\",\n    \"metadescription\": \"Rosnando é um ruído de aviso\",\n    \"body\": \"Uma coisa que os cientistas sabem com certeza é que a parte do cérebro do gato que controla as vocalizações está muito conectada à parte do cérebro que controla as emoções do gato. Portanto, o que o gato está “dizendo” é absolutamente uma percepção de como ele está se sentindo.\",\n    \"categoria\": \"comportamento\",\n    \"subcategoria\": \"treinamento\"\n  },\n  {\n    \"id\": 7,\n    \"title\": \"Como treinar um gato\",\n    \"metadescription\": \"Sim! Você pode treinar um gato e é muito mais fácil do que você pensava\",\n    \"body\": \"Normalmente usado como ferramentas de treinamento para uma ampla variedade de animais, um clicker custará apenas alguns dólares e ajudará você a dar um reforço positivo quando estiver aprendendo a treinar um gato. (Você também pode usar uma caneta comum com um botão de clique - o importante é ter um ruído distinto que possa fazer instantaneamente.) A maior parte do treinamento do gato envolve oferecer a seu gato uma guloseima que ele goste após um clique para marcar o comportamento desejado.\",\n    \"categoria\": \"comportamento\",\n    \"subcategoria\": \"treinamento\"\n  }\n]\n\n",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              }
+            ],
+            "enabled": true,
+            "randomResponse": false,
+            "sequentialResponse": false
+          },
+          {
+            "uuid": "",
+            "documentation": "",
+            "method": "get",
+            "endpoint": "post/:id",
+            "responses": [
+              {
+                "uuid": "",
+                "body": "{\n  \"id\": 1,\n  \"title\": \"Banho no cão\",\n  \"metadescription\": \"Use as utensilios certos para banhar seu cão\",\n  \"body\": \"A maioria dos cães prefere pular a hora do banho, mas o banho desempenha um papel importante na saúde do pelo e da pele do seu cão, ajudando a mantê-lo limpo e livre de sujeira e parasitas. Ter os produtos certos pode ajudá-lo a se sentir mais confortável.\",\n  \"categoria\": \"bem-estar\",\n  \"subcategoria\": \"higiene\"\n}\n",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [
+                  {
+                    "target": "params",
+                    "modifier": "id",
+                    "value": "1",
+                    "isRegex": false
+                  }
+                ],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              },
+              {
+                "uuid": "",
+                "body": "{\n  \"id\": 2,\n  \"title\": \"Seu cachorro merece um tapete higiênico\",\n  \"metadescription\": \"O banheiro que seu cachorro merece\",\n  \"body\": \"Os tapetes higiênicos são uma inovação do mercado pet, perfeitos para que seu cão faça suas necessidades com conforto e sem sujar a casa. São produtos descartáveis ou laváveis que garantem conforto ao animal.\",\n  \"categoria\": \"bem-estar\",\n  \"subcategoria\": \"higiene\"\n}\n",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [
+                  {
+                    "target": "params",
+                    "modifier": "id",
+                    "value": "2",
+                    "isRegex": false
+                  }
+                ],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              },
+              {
+                "uuid": "",
+                "body": "{\n  \"id\": 3,\n  \"title\": \"Época de pulgas?\",\n  \"metadescription\": \"É necessário evitar que seus animais sejam afetados por esses parasitas\",\n  \"body\": \"Não é a mordida, mas a reação alérgica a ela que faz seu cão coçar. Alguns animais de estimação são hipersensíveis a pulgas e podem sofrer uma reação severa com apenas uma única mordida. No entanto, todos os animais de estimação sentirão desconforto em caso de picadas de pulgas. Portanto, assim que você vir arranhões repetidos, suspeite de pulgas.\",\n  \"categoria\": \"bem-estar\",\n  \"subcategoria\": \"saude\"\n}",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [
+                  {
+                    "target": "params",
+                    "modifier": "id",
+                    "value": "3",
+                    "isRegex": false
+                  }
+                ],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              },
+              {
+                "uuid": "",
+                "body": "{\n  \"id\": 4,\n  \"title\": \"Uma onda de pets estressados\",\n  \"metadescription\": \"A mudança de rotina pode ser o maior fator\",\n  \"body\": \"Eles começaram a contar com a atenção extra incluindo todos aqueles novos cachorrinhos que esperam que estejamos por perto, mas com mais pessoas voltando ao escritório ou saindo de férias, os cães vão sentir a ausência mais do que nunca, criando uma pandemia de ansiedade entre nossos cães, para a qual podemos não estar preparados.\",\n  \"categoria\": \"comportamento\",\n  \"subcategoria\": \"educacao\"\n}",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [
+                  {
+                    "target": "params",
+                    "modifier": "id",
+                    "value": "4",
+                    "isRegex": false
+                  }
+                ],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              },
+              {
+                "uuid": "",
+                "body": "{\n  \"id\": 5,\n  \"title\": \"Como treinar seu cachorro para parar de ter medo\",\n  \"metadescription\": \"A socialização é um grande fator nesse aprendizado\",\n  \"body\": \"Ensinar um cachorro a parar de ter medo só pode ser feito aumentando sua autoconfiança. Isso significa mudar a forma como sua mente reage em certas situações e transformar associações negativas em positivas. Fazer isso requer muita paciência e uma série de exposições controladas ao evento ou objeto temido, mas a uma distância suficiente para que o cão não se sinta ansioso.\",\n  \"categoria\": \"comportamento\",\n  \"subcategoria\": \"educacao\"\n}",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [
+                  {
+                    "target": "params",
+                    "modifier": "id",
+                    "value": "5",
+                    "isRegex": false
+                  }
+                ],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              },
+              {
+                "uuid": "",
+                "body": "{\n  \"id\": 6,\n  \"title\": \"Por que os gatos rosnam?\",\n  \"metadescription\": \"Rosnando é um ruído de aviso\",\n  \"body\": \"Uma coisa que os cientistas sabem com certeza é que a parte do cérebro do gato que controla as vocalizações está muito conectada à parte do cérebro que controla as emoções do gato. Portanto, o que o gato está “dizendo” é absolutamente uma percepção de como ele está se sentindo.\",\n  \"categoria\": \"comportamento\",\n  \"subcategoria\": \"treinamento\"\n}",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [
+                  {
+                    "target": "params",
+                    "modifier": "id",
+                    "value": "6",
+                    "isRegex": false
+                  }
+                ],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              },
+              {
+                "uuid": "",
+                "body": "{\n  \"id\": 7,\n  \"title\": \"Como treinar um gato\",\n  \"metadescription\": \"Sim! Você pode treinar um gato e é muito mais fácil do que você pensava\",\n  \"body\": \"Normalmente usado como ferramentas de treinamento para uma ampla variedade de animais, um clicker custará apenas alguns dólares e ajudará você a dar um reforço positivo quando estiver aprendendo a treinar um gato. (Você também pode usar uma caneta comum com um botão de clique - o importante é ter um ruído distinto que possa fazer instantaneamente.) A maior parte do treinamento do gato envolve oferecer a seu gato uma guloseima que ele goste após um clique para marcar o comportamento desejado.\",\n  \"categoria\": \"comportamento\",\n  \"subcategoria\": \"treinamento\"\n}",
+                "latency": 0,
+                "statusCode": 200,
+                "label": "",
+                "headers": [],
+                "filePath": "",
+                "sendFileAsBody": false,
+                "rules": [
+                  {
+                    "target": "params",
+                    "modifier": "id",
+                    "value": "7",
+                    "isRegex": false
+                  }
+                ],
+                "rulesOperator": "OR",
+                "disableTemplating": false
+              }
+            ],
+            "enabled": true,
+            "randomResponse": false,
+            "sequentialResponse": false
+          }
+        ],
+        "proxyMode": false,
+        "proxyHost": "",
+        "proxyRemovePrefix": false,
+        "https": false,
+        "cors": false,
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+          }
+        ],
+        "proxyReqHeaders": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ],
+        "proxyResHeaders": [
+          {
+            "key": "",
+            "value": ""
+          }
+        ]
+      }
+    }
+  ]
+}
